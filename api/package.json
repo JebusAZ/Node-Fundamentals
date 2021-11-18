@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API Curso MTWDM Primer Cuatrimestre",
+  "main": "api.js",
+  "scripts": {
+    "dev": "set NODE_ENV=DEV && nodemon dist\\api.js",
+    "qa": "set NODE_ENV=QA && nodemon dist\\api.js",
+    "prod": "set NODE_ENV=PROD && node dist\\api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JesusAlzati",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13"
+  }
+}
