@@ -1,13 +1,12 @@
-import { Router, Request, Response, NextFunction } from 'express';
-import {testing, getProducstByID, newProduct} from '../controllers/product.controller';
+import { Router } from 'express';
+import ProductController from '../controllers/product.controller';
 
-
+const productCtrl = ProductController();
 const router = Router();
 
-router.get('/testing', testing);
-
-router.get('/getProducstByID/:id', getProducstByID);
-router.post('/newProduct', newProduct);
+router.get('/testing', productCtrl.testing);
+router.get('/getProductByID/:id', productCtrl.getProductByID);
+router.post('/newProduct', productCtrl.newProduct);
     
     
 
